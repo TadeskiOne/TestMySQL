@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <object-set>
+    <table path="task.applications">
+      <column name="virtual_column_name" expr="loan_amount * (SELECT products.interest_rate FROM products WHERE product_id = products.id) / 12"/>
+    </table>
+  </object-set>
+</data>
